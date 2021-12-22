@@ -1,6 +1,6 @@
 local Beef_UI_Lib = {}
 
-Beef_UI_Lib.ScreenGui = function(p)
+function Beef_UI_Lib:ScreenGui(p)
 	local SGUI_l = Instance.new("ScreenGui", p)
 	SGUI_l.Parent = p
 	SGUI_l.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -8,7 +8,7 @@ Beef_UI_Lib.ScreenGui = function(p)
 	return SGUI_l
 end
 
-Beef_UI_Lib.Collum = function(p)
+function Beef_UI_Lib:Collum(p)
 	local TopBar = Instance.new("Frame", p)
 	local Main = Instance.new("Frame", p)
 	local UIGradient = Instance.new("UIGradient", Main)
@@ -34,7 +34,7 @@ Beef_UI_Lib.Collum = function(p)
 	return Main
 end
 
-Beef_UI_Lib.Banner = function(p)
+function Beef_UI_Lib:Banner(p)
 	local Title = Instance.new("TextLabel", p)
 	local WelcomeMsg = Instance.new("TextLabel", p)
 
@@ -65,7 +65,7 @@ Beef_UI_Lib.Banner = function(p)
 	return Title, WelcomeMsg
 end
 
-Beef_UI_Lib.TRB = function(p)
+function Beef_UI_Lib:TRB(p)
 	local Expand = Instance.new("TextLabel", p)
 	local T_1 = Instance.new("Frame", Expand)
 	local T_2 = Instance.new("Frame", Expand)
@@ -98,7 +98,7 @@ Beef_UI_Lib.TRB = function(p)
 	return Expand
 end
 
-Beef_UI_Lib.CommandArea = function(p)
+function Beef_UI_Lib:CommandArea(p)
 	local ScrollingFrame = Instance.new("ScrollingFrame", p)
 	local UIListLayout = Instance.new("UIListLayout", ScrollingFrame)
 	local Search = Instance.new("Frame", p)
@@ -147,7 +147,7 @@ Beef_UI_Lib.CommandArea = function(p)
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 end
 
-Beef_UI_Lib.button_toggle = function(p)
+function Beef_UI_Lib:button_toggle(p)
 	local Btn_Toggle = Instance.new("TextButton", p)
 	local UICorner = Instance.new("UICorner", Btn_Toggle)
 	local UIStroke = Instance.new("UIStroke", Btn_Toggle)
