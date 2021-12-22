@@ -151,7 +151,7 @@ function Beef_UI_Lib:button_toggle(p)
 	local Btn_Toggle = Instance.new("TextButton", p)
 	local UICorner = Instance.new("UICorner", Btn_Toggle)
 	local UIStroke = Instance.new("UIStroke", Btn_Toggle)
-	local Tog = Instance.new("Frame", p)
+	local Tog = Instance.new("TextLabel", p)
 	local UICorner_a = Instance.new("UICorner", Tog)
 
 	Btn_Toggle.AutoButtonColor = false
