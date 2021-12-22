@@ -186,7 +186,6 @@ local Helper_Functions = {
 
 function Beef_UI_Lib.new(Type, ...)
 	if Type then
-		local k = ...
 		return Helper_Functions
 	end
 end
