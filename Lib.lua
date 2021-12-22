@@ -66,7 +66,7 @@ function Beef_UI_Lib:Banner(p)
 end
 
 function Beef_UI_Lib:TRB(p)
-	local Expand = Instance.new("TextLabel", p)
+	local Expand = Instance.new("TextButton", p)
 	local T_1 = Instance.new("Frame", Expand)
 	local T_2 = Instance.new("Frame", Expand)
 
