@@ -186,7 +186,8 @@ local Helper_Functions = {
 
 function Beef_UI_Lib.new(Type, ...)
 	if Type then
-		return getfenv(tostring(Type) .. "(" .. ... ..")")
+		local k = ...
+		return getfenv(tostring(Type) .. "(" .. k ..")")
 	end
 end
 
