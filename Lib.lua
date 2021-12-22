@@ -185,8 +185,8 @@ local Helper_Functions = {
 }
 
 function Beef_UI_Lib.new(Type, ...)
-	if Type == "ScreenGui" then
-		return Helper_Functions.ScreenGui(...)
+	if Type then
+		return getfenv(tostring(Type) .. "(" .. ... ..")")
 	end
 end
 
